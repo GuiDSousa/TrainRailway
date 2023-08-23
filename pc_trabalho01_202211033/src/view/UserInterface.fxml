@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TrainView">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="720.0">
+         <image>
+            <Image url="@../images/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="720.0" fitWidth="173.0" layoutX="274.0">
+         <image>
+            <Image url="@../images/trilhos_completo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tremLaranjaImageView" layoutX="246.0" layoutY="604.0">
+         <image>
+            <Image url="@../images/trem.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tremAzulImageView" layoutX="369.0" layoutY="604.0">
+         <image>
+            <Image url="@../images/trem_azul.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="220.0" layoutX="466.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/blue_button00.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="220.0" layoutX="466.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/red_button01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="146.0" layoutX="466.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nome_trem_laranja.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="146.0" layoutX="466.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nome_trem_azul.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="speedSliderLaranja" layoutX="506.0" layoutY="507.0" majorTickUnit="2.0" max="10.0" minorTickCount="2" prefWidth="140.0" showTickLabels="true" showTickMarks="true" />
+      <Slider fx:id="speedSliderAzul" layoutX="506.0" layoutY="604.0" majorTickUnit="2.0" max="10.0" prefWidth="140.0" showTickLabels="true" showTickMarks="true" />
+      <Button fx:id="resetButton" layoutX="616.0" layoutY="662.0" mnemonicParsing="false" onAction="#handleReset" style="-fx-background-color: #751000;" text="RESET" textFill="WHITE">
+         <font>
+            <Font name="MADEOuterSans" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
